@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+		font-family: arial, sans-serif;
+		border-collapse: collapse;
+		width: 100%;
+}
+
+td, th {
+		border: 1px solid #dddddd;
+		text-align: left;
+		padding: 8px;
+}
+
+tr:nth-child(even) {
+		background-color: #dddddd;
+}
+</style>
+<script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+<script src="main.js"></script>
+</head>
+<body>
+
+<table class ="table">
+	<tr class="header">
+		<th >Rule Name <button data-columns="name"> sort </button></th>
+		<th >Severity <button data-columns="severity">sort </button></th>
+		<th >Catagory <button data-columns="catagroy">sort </button></th>
+		<th >Description <button data-columns="description">sort </button></th>
+	</tr>
+
+</table>
+
+</body>
+</html>
