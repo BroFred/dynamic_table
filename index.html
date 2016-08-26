@@ -14,22 +14,35 @@ td, th {
 		padding: 8px;
 }
 
-tr:nth-child(even) {
-		background-color: #dddddd;
-}
 </style>
 <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+<script src="https://use.fontawesome.com/05c4c023c6.js"></script>
 <script src="main.js"></script>
 </head>
 <body>
-
+<div style = "padding:4px">
+	Role Name:<input class ="filter" data-columns="name">
+	Sererity:<select class ="filter" data-columns="severity">
+						<option></option>
+						<option value="0">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+					</select>
+	Catagroy:<select data-columns="catagroy">
+						<option></option>
+						<option value="0">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+					</select>
+	Description:<input class ="filter" data-columns="description">
+</div>
 <table class ="table">
 	<tr class="header">
-		<th >Rule Name <button data-columns="name"> sort </button></th>
-		<th >Severity <button data-columns="severity">sort </button></th>
-		<th >Catagory <button data-columns="catagroy">sort </button></th>
-		<th >Description <button data-columns="description">sort </button></th>
+		<th >Rule Name <button data-columns="name"> <i class="fa fa-sort-asc" aria-hidden="true"></i> </button></th>
+		<th >Severity <button data-columns="severity"><i class="fa fa-sort-asc" aria-hidden="true"></i> </button></th>
+		<th >Catagory <button data-columns="catagroy"><i class="fa fa-sort-asc" aria-hidden="true"></i> </button></th>
+		<th >Description <button data-columns="description"><i class="fa fa-sort-asc" aria-hidden="true"></button></th>
 	</tr>
 
 </table>
