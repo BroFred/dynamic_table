@@ -1,41 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-table {
-		font-family: arial, sans-serif;
-		border-collapse: collapse;
-		width: 100%;
-}
-
-td, th {
-		border: 1px solid #dddddd;
-		text-align: left;
-		padding: 8px;
-}
-
-</style>
-<script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
 <script src="https://use.fontawesome.com/05c4c023c6.js"></script>
 <script src="main.js"></script>
 </head>
 <body>
-<div style = "padding:4px">
-	Role Name:<input class ="filter" data-columns="name">
-	Sererity:<select class ="filter" data-columns="severity">
-						<option></option>
-						<option value="0">0</option>
-						<option value="1">1</option>
-						<option value="2">2</option>
-					</select>
-	Catagroy:<select data-columns="catagroy">
-						<option></option>
-						<option value="0">0</option>
-						<option value="1">1</option>
-						<option value="2">2</option>
-					</select>
-	Description:<input class ="filter" data-columns="description">
+<div style = "margin:20px">
+	<span class="filter-body ">
+		<input class ="filter" data-columns="name" type='text' id="name">
+		<label class ="filter-label" for='name'>Role Name:</label>
+	</span>
+	<span class="filter-body ">
+		<select class ="filter" data-columns="severity">
+				<option value =''>Sererity:</option>
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+		</select>
+	</span>
+	<span class="filter-body ">
+		<select  class ="filter" data-columns="catagroy">
+			<option value =''>Catagroy:</option>
+			<option value="0">0</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+		</select>
+	</span>
+	<span class="filter-body ">
+		<input class ="filter" data-columns="description" type='text' id="description">
+		<label class ="filter-label" for='description'>Description:</label>
+	</span>
 </div>
 <table class ="table">
 	<tr class="header">

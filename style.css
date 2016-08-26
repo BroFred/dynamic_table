@@ -1,0 +1,29 @@
+table {
+		font-family: arial, sans-serif;
+		border-collapse: collapse;
+		width: 100%;
+}
+
+td, th {
+		border: 1px solid #dddddd;
+		text-align: left;
+		padding: 8px;
+}
+
+.filter-body {
+	position: relative;
+	margin: 20px;
+}
+.filter + .filter-label{
+	position: absolute;
+	padding: 0 1em;
+	cursor: text;
+	color: #6A7989;
+	left : -10px;
+	transform-origin: left center;
+	transition: all 0.3s;
+}
+.filter:focus + .filter-label{
+	color: #333333;
+	transform: translateY(-20px) scale(0.8);
+}
