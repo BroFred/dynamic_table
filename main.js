@@ -1,10 +1,21 @@
 
+// sample data
+var dataModel = function(name,severity,catagroy,description){
+	this.name = name;
+	this.severity = severity;
+	this.catagroy = catagroy;
+	this.description = description;
+}
 var dataArr  = [
-	{name : 1, severity:1, catagroy:1, description:'abc'},
-	{name : 2, severity:0, catagroy:0, description:'abcd'},
-	{name : 3, severity:1, catagroy:1, description:'abcde'}
-];
 
+];
+for(var i=0;i<50;i++){
+	dataArr.push(new dataModel(_.random(0,100),_.random(0,2),_.random(0,2),_.random(0,1000)));
+}
+
+
+
+// main
 var sorting_status = {};
 for(var i in dataArr[0]){
 	sorting_status[i] = -1;
