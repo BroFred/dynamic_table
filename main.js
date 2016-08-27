@@ -72,6 +72,7 @@ function sort_refresh(){
 			$(this).text(current[$(this).data('columns')]);
 		})
 	})
+	add_to_filter();
 
 }
 

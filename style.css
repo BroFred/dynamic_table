@@ -27,3 +27,7 @@ td, th {
 	color: #333333;
 	transform: translateY(-20px) scale(0.8);
 }
+.filter:valid + .filter-label{
+	color: #333333;
+	transform: translateY(-20px) scale(0.8);
+}
